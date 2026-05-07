@@ -3,7 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=Chromium",
+    "test:firefox": "playwright test --project=Firefox",
+    "test:webkit": "playwright test --project=WebKit",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report",
+    "install:browsers": "playwright install"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
